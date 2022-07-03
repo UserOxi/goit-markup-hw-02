@@ -20,6 +20,9 @@
 
 body {
   font-family: var(--main-font);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
   color: var(--primary-txt-cl);
 }
 
@@ -33,8 +36,11 @@ body {
   text-decoration: none;
   color: currentColor;
 }
-
-.section-hero,
+.link:hover,
+.link:focus {
+  color: var(--accent-txt-cl);
+}
+.hero,
 .footer {
   background-color: var(--address-bg-cl);
 }
@@ -52,10 +58,9 @@ body {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  letter-spacing: 0.03em;
 }
 
-/* header */
+/* HEADER */
 
 /* logo */
 .logo {
@@ -63,7 +68,6 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
   color: var(--accent-txt-cl);
 }
 
@@ -75,19 +79,15 @@ body {
   color: var(--txt-light-cl);
 }
 
-/* link */
-.header-link {
+.header {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.02em;
+}
+.header-list {
+letter-spacing: 0.02em;
 }
 
-.header-link:hover,
-.header-link:focus {
-  color: var(--accent-txt-cl);
-}
-
+/* link */
 .link-nav {
   color: var(--txt-dark-cl);
 }
@@ -98,7 +98,7 @@ body {
 
 /* Hero */
 
-.main-title {
+.hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -127,16 +127,8 @@ body {
 /* Features */
 
 .title-feature {
-  font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
-}
-
-.text-feature {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
 }
 
 /* Team */
@@ -150,34 +142,23 @@ body {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  letter-spacing: 0.03em;
 }
 
 .text-team {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  letter-spacing: 0.03em;
 }
 
 /* Footer */
 
-.address-link {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--txt-light-cl);
-}
-
-.address-link:hover,
-.address-link:focus {
-  color: var(--accent-txt-cl);
-}
-
-.contact-link {
+.address {
+  font-style: inherit;
   color: var(--contacts-txt-cl);
+}
+
+.address-link {
+  color: var(--txt-light-cl);
 }
 
 /* PORTFOLIO */
@@ -186,7 +167,6 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  letter-spacing: 0.03em;
   color: var(--txt-dark-cl);
   background-color: var(--team-btn-bg-cl);
 }
@@ -211,12 +191,4 @@ body {
 .text-portfolio {
   font-size: 16px;
   line-height: 1.88;
-  letter-spacing: 0.03em;
-}
-
-.title-portfolio:hover,
-.title-portfolio:focus,
-.text-portfolio:hover,
-.text-portfolio:focus {
-  color: var(--accent-txt-cl);
 }
